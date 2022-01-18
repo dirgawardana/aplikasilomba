@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class Daftarlomba extends Migration
+class CreateLombasTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,12 @@ class Daftarlomba extends Migration
      */
     public function up()
     {
-        Schema::create('daftarlomba', function (Blueprint $table) {
-            $table->Increments('id')->nullable()->unsigned();
-            $table->string('name',50);
-            $table->string('jeniskelamin',2);
-            $table->string('usia',2);
-            $table->string('alamat',255);
+        Schema::create('lombas', function (Blueprint $table) {
+            $table->bigIncrements('id');
+            $table->string('name');
+            $table->string('jeniskelamin');
+            $table->string('usia');
+            $table->string('alamat');
             $table->timestamps();
         });
     }
@@ -30,6 +30,6 @@ class Daftarlomba extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('daftarlomba');
+        Schema::dropIfExists('lombas');
     }
 }
