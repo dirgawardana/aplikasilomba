@@ -34,18 +34,14 @@
             <td>{{ $lomba->jeniskelamin }}</td>
             <td>{{ $lomba->usia }}</td>
             <td>{{ $lomba->alamat }}</td>
-                <form action="{{ route('lombas.destroy',$lomba->id) }}" method="POST">
-   
-                    <a class="btn btn-info" href="{{ route('lombas.show',$lomba->id) }}">Show</a>
-    
-                    <a class="btn btn-primary" href="{{ route('lombas.edit',$lomba->id) }}">Edit</a>
-   
-                    @csrf
-                    @method('DELETE')
-      
-                    <button type="submit" class="btn btn-danger">Delete</button>
-                </form>
-            </td>
+            <td>
+                <a href="{{ route('lombas.edit',$lomba->id)}}" class="btn btn-primary">Edit</a>
+                    <a action="{{ route('lombas.destroy', $lomba->id)}}" method="post">
+                      @csrf
+                      @method('DELETE')
+                      <button class="btn btn-danger" type="submit">Delete</button>
+                    </a>
+                </td>
         </tr>
         @endforeach
     </table>
