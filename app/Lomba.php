@@ -7,6 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class Lomba extends Model
 {
     protected $fillable = [
-        'name', 'jeniskelamin', 'usia', 'alamat'
+        'name', 'jeniskelamin', 'usia', 'alamat', 'oke'
     ];
 }
