@@ -4,7 +4,7 @@
 <div class="row">
     <div class="col-lg-12 margin-tb">
         <div class="pull-left">
-            <h2>Menambah Daftar Baru</h2>
+            <h3><strong>Menambah Peserta Lomba Baru</strong></h3>
         </div>
     </div>
 </div>
