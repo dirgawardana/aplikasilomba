@@ -12,10 +12,19 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('dashboard');
+});
+
+Route::get('dashboard', function () {
+    return view('dashboard');
+});
+
+Route::get('contoh2', function () {
+  return view('contoh2');
 });
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::resource('/lombas','LombaController');
+Route::resource('/perlombaans','PerlombaanController');
+Route::resource('/kategori','KategoriController');
