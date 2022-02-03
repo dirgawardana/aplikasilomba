@@ -17,4 +17,12 @@
       <p>Jenis Lomba</p>
     </a>
   </li>
+  <li>
+    <a href="{{url('logout')}}">
+      <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+        @csrf
+    </form>
+      <p>Logout</p>
+    </a>
+  </li>
 </ul>

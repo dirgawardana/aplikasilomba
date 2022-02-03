@@ -50,7 +50,8 @@ class PerlombaanController extends Controller
         $request->validate([
             'name' => 'required',
             'jeniskelamin' => 'required',
-            'usia' => 'required',
+            'jenislomba' => 'required',
+            'usia' => 'required|numeric',
             'alamat' => 'required',
         ]);
   
@@ -96,7 +97,7 @@ class PerlombaanController extends Controller
             'name' => 'required',
             'jeniskelamin' => 'required',
             'jenislomba' => 'required',
-            'usia' => 'required',
+            'usia' => 'required|numeric',
             'alamat' => 'required',
         ]);
   

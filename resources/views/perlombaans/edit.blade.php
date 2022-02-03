@@ -31,35 +31,35 @@
 
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Nama Lengkap :</strong>
+                    <strong>Nama:</strong>
                     <input type="text" name="name" value="{{ $perlombaan->name }}" class="form-control" placeholder="Name">
                 </div>
             </div>
 
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Jenis Kelamin :</strong>
+                    <strong>Jenis Kelamin:</strong>
                     <input type="text" name="jeniskelamin" value="{{ $perlombaan->jeniskelamin }}" class="form-control" placeholder="Jenis Kelamin">
                 </div>
             </div>
 
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Jenis Lomba :</strong>
+                    <strong>Jenis Lomba:</strong>
                     <input type="text" name="jenislomba" value="{{ $perlombaan->jeniskelamin }}" class="form-control" placeholder="Jenis Kelamin">
                 </div>
             </div>
 
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Usia :</strong>
+                    <strong>Usia:</strong>
                     <input type="text" name="usia" value="{{ $perlombaan->usia }}" class="form-control" placeholder="Usia">
                 </div>
             </div>
 
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
-                    <strong>Alamat :</strong>
+                    <strong>Alamat:</strong>
                     <input type="text" name="alamat" value="{{ $perlombaan->alamat }}" class="form-control" placeholder="Alamat">
                 </div>
             </div>
