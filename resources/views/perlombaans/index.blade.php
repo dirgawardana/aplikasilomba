@@ -17,13 +17,13 @@
    
     <table class="table table-bordered">
         <tr>
-            <th>No</th>
-            <th>Nama</th>
-            <th>Jenis Kelamin</th>
-            <th>Jenis Lomba</th>
-            <th>Usia</th>
+            <th width="45px">No</th>
+            <th>Nama Lengkap</th>
+            <th width="120px">Jenis Kelamin</th>
+            <th width="185px">Jenis Lomba</th>
+            <th width="50px">Usia</th>
             <th>Alamat</th>
-            <th width="280px">Action</th>
+            <th width="185px">Opsi</th>
         </tr>
         @foreach ($perlombaans as $perlombaan)
         <tr>

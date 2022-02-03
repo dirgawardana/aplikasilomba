@@ -1,5 +1,5 @@
 <ul class="nav">
-  <li class="active ">
+  <li>
     <a href="{{url('dashboard')}}">
       <i class="nc-icon nc-bank"></i>
       <p>Dashboard</p>

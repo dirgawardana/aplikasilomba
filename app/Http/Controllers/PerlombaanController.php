@@ -3,7 +3,13 @@
 namespace App\Http\Controllers;
 
 use App\Perlombaan;
+use App\Kategori;
+
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Input;
+use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Session;
 
 class PerlombaanController extends Controller
 {
@@ -27,7 +33,10 @@ class PerlombaanController extends Controller
      */
     public function create()
     {
-        return view('perlombaans.create');
+        $kategori = Kategori::orderBy('jenislomba','ASC')
+        ->get()
+        ->pluck('jenislomba','id');
+        return view('perlombaans.create', compact('kategori'));
     }
 
     /**
@@ -70,6 +79,7 @@ class PerlombaanController extends Controller
      */
     public function edit(Perlombaan $perlombaan)
     {
+        
         return view('perlombaans.edit',compact('perlombaan'));
     }
 

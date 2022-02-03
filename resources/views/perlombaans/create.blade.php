@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="row">
-    <div class="col-lg-12 margin-tb">
+    <div class="col-lg-12 margin-tb">   
         <div class="pull-left">
             <h3><strong>Menambah Peserta Lomba Baru</strong></h3>
         </div>
@@ -19,43 +19,43 @@
         </ul>
     </div>
 @endif
-   
-<form action="{{ route('perlombaans.store') }}" method="POST">
+{{ Form::open(['route'=>'perlombaans.store','files'=>true]) }}
     @csrf
   
      <div class="row">
 
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Nama:</strong>
+                <strong>Nama Lengkap :</strong>
                 <input type="text" name="name" class="form-control" placeholder="Nama Lengkap">
             </div>
         </div>
 
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Jenis Kelamin:</strong>
+                <strong>Jenis Kelamin :</strong>
                 <input type="text" name="jeniskelamin" class="form-control" placeholder="Jenis Kelamin">
             </div>
         </div>
 
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Jenis Lomba:</strong>
-                <input type="text" name="jenislomba" class="form-control" placeholder="Jenis Lomba">
+                <strong>Jenis Lomba</strong>
+                    {{form::select('jenislomba', $kategori, null, ['class' => 'form-control select', 'placeholder' => 'jenislomba', 'id' => 'jenislomba', 'required'])}}
+                    <span class="help-block with-errors"></span>
             </div>
         </div>
 
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Usia:</strong>
+                <strong>Usia :</strong>
                 <input type="text" name="usia" class="form-control" placeholder="Usia">
             </div>
         </div>
 
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Alamat:</strong>
+                <strong>Alamat :</strong>
                 <input type="text" name="alamat" class="form-control" placeholder="Alamat">
             </div>
         </div>

@@ -9,4 +9,8 @@ class Perlombaan extends Model
     protected $fillable = [
         'name', 'jeniskelamin', 'jenislomba', 'usia', 'alamat'
     ];
+    public function kategori()
+    {
+        return $this->belongsTo(Kategori::class);
+    }
 }

@@ -18,9 +18,9 @@
   <table class="table table-striped">
     <thead>
         <tr>
-          <td>ID</td>
+          <td>No</td>
           <td>Jenis Lomba</td>
-          <td colspan="2">Action</td>
+          <td colspan="2">Opsi</td>
         </tr>
     </thead>
     <tbody>
